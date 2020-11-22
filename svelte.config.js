@@ -11,7 +11,7 @@ module.exports = {
     pug: false,
     replace: false,
     sass: false,
-    scss: true,
+    scss: false,
     stylus: false,
   }),
 };

@@ -2,7 +2,7 @@
   const world = 'world'; // edit world and save to see hmr update
 </script>
 
-<style type="scss">
+<style>
 /* Check out
 https://www.dropbox.com/scl/fi/f6jbc29x52b9z1uhszd91/Meet-the-Raven-one-step-closer-to-container-based-queries.paper
 for details */
@@ -106,17 +106,16 @@ Usinf margins on the children instead of padding on the parent can work around t
   );
   /*display: inline-block;*/
   width: var(--raven_img_width);
-
+}
+.card-img img {
   border: 1px solid #eee;
   padding: 0.5rem;
   border-radius: 4px;
-  img {
-    border-radius: 2px;
-    max-width: 200%;
-    width: 100%;
-    margin: auto;
-    display: block;
-  }
+  border-radius: 2px;
+  max-width: 200%;
+  width: 100%;
+  margin: auto;
+  display: block;
 }
 .card-info {
   margin: var(--raven_padding);
@@ -133,18 +132,12 @@ Usinf margins on the children instead of padding on the parent can work around t
   /* display: inline-block; */
   width: var(--raven_txt_width);
   vertical-align: top;
-  h2 {
-    margin: 0 0 1rem 0;
-  }
-  p {
-    color: #78909c;
-  }
 }
-
-body {
-  color: #37474f;
-  padding: 50px;
-  font: 100%/1.5 system-ui;
+.card-info h2 {
+  margin: 0 0 1rem 0;
+}
+.card-info p {
+  color: #78909c;
 }
 </style>
 
